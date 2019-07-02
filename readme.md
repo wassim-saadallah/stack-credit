@@ -48,7 +48,6 @@
     title: String,
     body: String
     addedAt: Date
-
     replies: [Reply]
 }
 ```

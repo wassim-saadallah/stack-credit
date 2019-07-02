@@ -1,6 +1,8 @@
-const express = require('express');
-const router = express.Router();
-const db = require('../db/questions')
+import { Router } from 'express'
+import * as db from "../db/questions";
+
+const router = Router();
+
 
 /**
  * - GET /api/questions : get all questions
@@ -10,7 +12,7 @@ const db = require('../db/questions')
  */
 
 router.get('/questions', (req, res) => {
-    return db.addQuestion()
+    return db.getQuestion
 })
 
 router.get('/questions/:id', (req, res) => {

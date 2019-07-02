@@ -1,4 +1,4 @@
-const db = require('./config')
+import db from './config';
 
 /*
 {
@@ -10,22 +10,18 @@ const db = require('./config')
 }
 */
 
-function addQuestion(question) {
+export function addQuestion(question) {
 
 }
 
-function getQuestion(question) {
+export function getQuestion(question) {
 
 }
 
-function updateQuestion(question) {
+export function updateQuestion(question) {
 
 }
 
-function deleteQuestion(question) {
+export function deleteQuestion(question) {
 
 }
-
-
-
-module.exports = { addQuestion, getQuestion, updateQuestion, deleteQuestion }

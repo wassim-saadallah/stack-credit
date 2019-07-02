@@ -41,12 +41,42 @@
 
 ## Schema
 
-### Questions
-```json
+### Question
+```javascript
 {
-    ""
+    id: String,
+    title: String,
+    body: String
+    addedAt: Date
+
+    replies: [Reply]
 }
 ```
-### Users
-### Credit
-### Marketplace
+### Reply
+```javascript
+{
+    id: String,
+    title: String,
+    body: String
+    replies: [Reply]
+}
+```
+### User
+```javascript
+{
+    id: String,
+    username: String,
+    password: secureString,
+    credit: int,
+    courses: [Course]
+}
+```
+### Course
+```javascript
+{
+    id: String,
+    title: String,
+    description: String,
+    imageUrl: String,
+}
+```
